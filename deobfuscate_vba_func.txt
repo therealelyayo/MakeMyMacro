@@ -1,0 +1,6 @@
+Private Function ifdzzeqrgpem(ByVal ranemdkmkhjc As String) As String
+Dim leukfodjbuzz As Long
+For leukfodjbuzz = 1 To Len(ranemdkmkhjc) Step 2
+ifdzzeqrgpem = ifdzzeqrgpem & Chr$(Val("&H" & Mid$(ranemdkmkhjc, leukfodjbuzz, 2)))
+Next leukfodjbuzz
+End Function
