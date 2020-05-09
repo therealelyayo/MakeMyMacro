@@ -8,3 +8,5 @@ Combines [macro_pack](https://github.com/sevagas/macro_pack) and [VBA-RunPE](htt
 ## How to run
 For now just run **python makemymacro.py -h** to see the necessary arguments. Will add more documentation later.
 
+## Disclaimer
+I am not responsible with how and where you use this. 
