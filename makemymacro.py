@@ -73,15 +73,15 @@ def vba_obfuscation(office_arch, file, file_arg):
 	os.system('del file_arg_obfuscated.vba')
 
 	#once file and arg in file.vba, use macro_pack to obfuscate the code which is below
-	#will have to have macro_pack.exe in same directory for now
-    #https://github.com/sevagas/macro_pack
+	#will need macro_pack.exe in same directory for now
+        #https://github.com/sevagas/macro_pack
 	os.system('macro_pack.exe -f file_arg.vba -o -q -G file_arg_obfuscated.vba')
 
 	print("[*] VBA Obfuscation: Done")
 
 
 #needs RunPE.vba from VBA-RunPE https://github.com/itm4n/VBA-RunPE 
-#check onenote for file format. const at top. vba obfuscation at bottom. strSrcFile and strSrcArguments in AutoOpen
+#const at top. vba obfuscation at bottom. strSrcFile and strSrcArguments in AutoOpen
 def vba_RunPe():
     
     with open('file_arg_obfuscated.vba') as file_arg:
